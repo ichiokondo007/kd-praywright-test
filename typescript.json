@@ -1,0 +1,14 @@
+
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "noEmit": true,              // 👈 テスト時に .js を出力しない
+    "types": ["playwright"]
+  },
+  "include": ["tests", "pages", "types"] // あなたのテスト構造に合わせて調整
+}
